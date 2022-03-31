@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {ActivityIndicator, Text, View} from 'react-native';
+import React, { useState } from 'react';
+import { ActivityIndicator, Text, View } from 'react-native';
 import PlaidComponent from './PlaidLink';
 
 var styles = require('./style');
@@ -13,7 +13,7 @@ const HomeScreen = () => {
   const [loading, setLoading] = useState(false);
 
   return (
-    <View style={{flex: 1}}>
+    <View style={{ flex: 1 }}>
       <View style={styles.heading}>
         <Text style={styles.titleText}>Plaid Link React Native Demo</Text>
       </View>

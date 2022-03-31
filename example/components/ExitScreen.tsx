@@ -1,11 +1,11 @@
 import React from 'react';
-import { Text, View, } from 'react-native';
-import { LinkExit, } from 'react-native-plaid-link-sdk';
+import { Text, View } from 'react-native';
+import { LinkExit } from 'react-native-plaid-link-sdk';
 
 var styles = require('./style');
 
 const ExitScreen = ({ route, navigation }: any) => {
-  const linkExit : LinkExit = route.params;
+  const linkExit: LinkExit = route.params;
   console.log(linkExit);
   return (
     <View style={{ flex: 1 }}>

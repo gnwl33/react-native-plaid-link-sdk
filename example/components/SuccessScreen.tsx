@@ -7,15 +7,15 @@ import {
   Platform,
   Alert,
 } from 'react-native';
-import { Linking, } from 'react-native';
+import { Linking } from 'react-native';
 import Clipboard from '@react-native-community/clipboard';
-import { TouchableOpacity, } from 'react-native-gesture-handler';
-import { LinkSuccess, } from 'react-native-plaid-link-sdk';
+import { TouchableOpacity } from 'react-native-gesture-handler';
+import { LinkSuccess } from 'react-native-plaid-link-sdk';
 
 var styles = require('./style');
 
 const SuccessScreen = ({ route, navigation }: any) => {
-  const linkSuccess : LinkSuccess  = route.params;
+  const linkSuccess: LinkSuccess = route.params;
   return (
     <View style={{ flex: 1 }}>
       <View style={styles.heading}>
@@ -32,7 +32,9 @@ const SuccessScreen = ({ route, navigation }: any) => {
           <Text
             style={{ color: '#0A85EA' }}
             onPress={() =>
-              Linking.openURL('https://github.com/plaid/react-native-plaid-link-sdk')
+              Linking.openURL(
+                'https://github.com/plaid/react-native-plaid-link-sdk',
+              )
             }>
             https://github.com/plaid/react-native-plaid-link-sdk
           </Text>{' '}

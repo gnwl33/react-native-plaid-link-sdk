@@ -1,7 +1,16 @@
 import React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
-import {PlaidLink, usePlaidEmitter, LinkEvent, LinkExit, LinkSuccess, LinkEventName, PlaidLinkComponentProps} from 'react-native-plaid-link-sdk';
-import {useNavigation} from '@react-navigation/native';
+import { Text, View, StyleSheet } from 'react-native';
+import {
+  PlaidLink,
+  usePlaidEmitter,
+  LinkEvent,
+  LinkExit,
+  LinkSuccess,
+  LinkEventName,
+  PlaidLinkComponentProps,
+  LinkTokenConfiguration,
+} from 'react-native-plaid-link-sdk';
+import { useNavigation } from '@react-navigation/native';
 
 type PlaidComponentProps = {
   tokenConfig: LinkTokenConfiguration;

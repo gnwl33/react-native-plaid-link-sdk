@@ -1,5 +1,9 @@
 # Getting Started ![version](https://img.shields.io/npm/v/react-native-plaid-link-sdk)
 
+
+https://user-images.githubusercontent.com/49012458/161092740-29d329e5-2dd2-48d5-820a-ec1e19364aed.mp4
+
+
 In your react-native project directory:
 
 ```sh

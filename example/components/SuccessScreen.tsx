@@ -59,6 +59,15 @@ const SuccessScreen = ({ route, navigation }: any) => {
             </Text>
           </Text>
         </TouchableOpacity>
+        <TouchableOpacity
+          style={exampleDataStyle.button}
+          onPress={() =>
+            navigation.navigate('Account Balances', {
+              publicToken: linkSuccess.publicToken,
+            })
+          }>
+          <Text style={exampleDataStyle.text}>View Example Data</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -70,6 +79,21 @@ const successStyles = StyleSheet.create({
     marginTop: 16,
     color: '#000000',
     textAlign: 'left',
+  },
+});
+
+const exampleDataStyle = StyleSheet.create({
+  button: {
+    backgroundColor: 'black',
+    padding: 12,
+    fontSize: 17,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 25,
+  },
+  text: {
+    color: 'white',
+    fontSize: 18,
   },
 });
 

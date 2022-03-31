@@ -8,6 +8,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import ExitScreen from './components/ExitScreen';
 import SuccessScreen from './components/SuccessScreen';
 import HomeScreen from './components/HomeScreen';
+import BalancesScreen from './components/BalancesScreen';
 import { PlaidTheme } from './components/style';
 
 const Stack = createStackNavigator();
@@ -38,7 +39,7 @@ const App = (): React.ReactElement => {
                 backgroundColor: '#000000',
               },
               headerTintColor: '#fff',
-              headerLeft: (props) => <HeaderBackButton {...props} />,
+              headerLeft: props => <HeaderBackButton {...props} />,
             }}
           />
           <Stack.Screen
@@ -50,7 +51,19 @@ const App = (): React.ReactElement => {
                 backgroundColor: '#000000',
               },
               headerTintColor: '#fff',
-              headerLeft: (props) => <HeaderBackButton {...props} />,
+              headerLeft: props => <HeaderBackButton {...props} />,
+            }}
+          />
+          <Stack.Screen
+            name="Account Balances"
+            component={BalancesScreen}
+            options={{
+              animationEnabled: false,
+              headerStyle: {
+                backgroundColor: '#000000',
+              },
+              headerTintColor: '#fff',
+              headerLeft: props => <HeaderBackButton {...props} />,
             }}
           />
         </Stack.Navigator>
